@@ -6,6 +6,7 @@ from rest_framework.exceptions import PermissionDenied
 from posts.models import Post, Group
 from .serializers import CommentSerializer, GroupSerializer, PostSerializer
 
+
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
